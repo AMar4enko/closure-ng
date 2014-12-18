@@ -1,0 +1,22 @@
+{
+  "common": {
+    "jadeOptions": {},
+    "sassLibraries": ["lib/bourbon/dist", "lib/bitters/app/assets/stylesheets", "lib/neat/app/assets/stylesheets"],
+    "closureEntryPoint": "template.application"
+  },
+  "development": {
+    "default": true,
+    "destination": "build/development",
+    "compile": false
+  },
+  "staging": {
+    "destination": "build/staging",
+    "compile": true,
+    "sourceMaps": true
+  },
+  "production": {
+    "destination": "build/production",
+    "compile": true,
+    "sourceMaps": false
+  }
+}

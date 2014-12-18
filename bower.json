@@ -1,0 +1,39 @@
+{
+  "name": "angularjs-closure_compiler",
+  "version": "0.0.1",
+  "authors": [
+    "AMar4enko <amar4enko@gmail.com>"
+  ],
+  "description": "AngularJS + Closure Compiler template",
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "closure-library": "git://github.com/google/closure-library.git",
+    "bourbon": "~4.0.2",
+    "neat": "~1.7.0",
+    "bitters": "git://github.com/thoughtbot/bitters.git#v0.10.1",
+    "angular": "1.3.6",
+    "ui-router": "~0.2.13"
+  },
+  "overrides": {
+    "closure-library": {
+      "main": {
+        "production": [],
+        "development": [
+          "closure/goog/base.js"
+        ]
+      }
+    }
+  }
+}

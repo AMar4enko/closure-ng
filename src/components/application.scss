@@ -1,0 +1,8 @@
+@import "bourbon";
+@import "neat";
+
+@for $col from 1 through 12 {
+  .col-#{$col} {
+    @include span-columns($col);
+  }
+}
